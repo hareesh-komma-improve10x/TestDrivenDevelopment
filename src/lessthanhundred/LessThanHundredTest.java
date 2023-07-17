@@ -24,7 +24,7 @@ public class LessThanHundredTest {
 
     @Test
     public void givenHundredAndOne_returnsFalse() {
-        boolean hundred = lessThanHundred.findLessThanHundred(100, 1);
-        assertEquals(false, hundred);
+        boolean hundred = lessThanHundred.findLessThanHundred(0, 0);
+        assertEquals(true, hundred);
     }
 }

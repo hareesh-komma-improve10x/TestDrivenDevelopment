@@ -22,6 +22,12 @@ public class EvenNumberTest {
         EvenNumber evenNumber = new EvenNumber();
         int num = evenNumber.find(90);
         assertEquals(178, num);
+    }
 
+    @Test
+    public void findIsZeroEvenNumber() {
+        EvenNumber evenNumber = new EvenNumber();
+        int num = evenNumber.find(0);
+        assertEquals(0, num);
     }
 }

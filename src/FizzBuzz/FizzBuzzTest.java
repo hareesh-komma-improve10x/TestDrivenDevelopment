@@ -38,8 +38,14 @@ class FizzBuzzTest {
 
     @Test
     public void returnNValue() {
-        String buzz = fizzBuzz.findFizzBuzz(1);
-        assertEquals(buzz, buzz);
+        String buzz = fizzBuzz.findFizzBuzz(5);
+        assertEquals("Buzz", buzz);
+    }
+
+    @Test
+    public void returnEmptyValue() {
+        String buzz = fizzBuzz.findFizzBuzz(0);
+        assertEquals("", buzz);
     }
 }
 

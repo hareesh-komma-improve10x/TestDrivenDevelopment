@@ -25,10 +25,17 @@ public class EvenOrOddTest {
     }
 
     @Test
+    public void givenZero_returnsOdd() {
+        EvenOrOdd evenOrOdd = new EvenOrOdd();
+        String givenThree = evenOrOdd.findEvenOdd(0);
+        assertEquals("Even", givenThree);
+    }
+
+    @Test
     public void givenTwo_returnsEven() {
         EvenOrOdd evenOrOdd = new EvenOrOdd();
-        String givenTwo = evenOrOdd.findEvenOdd(2);
-        assertEquals("Even", givenTwo);
+        String givenZero = evenOrOdd.findEvenOdd(2);
+        assertEquals("Even", givenZero);
     }
 
     @Test

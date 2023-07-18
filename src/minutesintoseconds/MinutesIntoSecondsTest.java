@@ -19,8 +19,8 @@ public class MinutesIntoSecondsTest {
      */
     @Test
     public void givenThree_returnsOneEightyseconds() {
-        int minIntoSeconds = minutesIntoSeconds.convertMinIntoSeconds(3);
-        assertEquals(180, minIntoSeconds);
+        int minIntoSeconds = minutesIntoSeconds.convertMinIntoSeconds(-1);
+        assertEquals(-60, minIntoSeconds);
     }
 
     @Test

@@ -23,4 +23,18 @@ public class EvenOrOddTest {
         String givenThree = evenOrOdd.findEvenOdd(3);
         assertEquals("Odd", givenThree);
     }
+
+    @Test
+    public void givenTwo_returnsEven() {
+        EvenOrOdd evenOrOdd = new EvenOrOdd();
+        String givenTwo = evenOrOdd.findEvenOdd(2);
+        assertEquals("Even", givenTwo);
+    }
+
+    @Test
+    public void givenFifteen_returnsOdd() {
+        EvenOrOdd evenOrOdd = new EvenOrOdd();
+        String givenFifteen = evenOrOdd.findEvenOdd(15);
+        assertEquals("Odd", givenFifteen);
+    }
 }

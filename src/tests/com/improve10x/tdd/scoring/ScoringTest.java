@@ -1,6 +1,6 @@
-package scoring;
+package com.improve10x.tdd.scoring;
 
-import org.junit.jupiter.api.BeforeEach;
+import com.improve10x.tdd.scoring.Scoring;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

@@ -1,6 +1,6 @@
-package fibonacci;
+package com.improve10x.tdd.fibonacci;
 
-import org.junit.jupiter.api.BeforeEach;
+import com.improve10x.tdd.fibonacci.Fibonacci;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

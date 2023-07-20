@@ -17,5 +17,15 @@ public class ScoringTest {
         assertArrayEquals(new int[3], allZeros);
     }
 
+    @Test
+    public void givenEmpty_returnsAllZeros() {
+        int[] allZeros = scoring.calculateScores("");
+        assertArrayEquals(new int[3], allZeros);
+    }
 
+    @Test
+    public void givenA_returnsOneZeroZero() {
+        int[] onlyAScores = scoring.calculateScores("A");
+        assertArrayEquals(new int[]{1, 0, 0}, onlyAScores);
+    }
 }

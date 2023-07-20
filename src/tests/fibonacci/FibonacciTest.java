@@ -30,4 +30,11 @@ public class FibonacciTest {
         assertEquals(0, firstFibonacci);
     }
 
+    @Test
+    public void givenTwo_returnsZero() {
+        Fibonacci fibonacci = new Fibonacci();
+        int secondFibonacci = fibonacci.findNthNumber(2);
+        assertEquals(1, secondFibonacci);
+    }
+
 }

@@ -15,4 +15,12 @@ public class FibonacciTest {
         int negativeFibonacci = fibonacci.findNthNumber(-42);
         assertEquals(-1, negativeFibonacci);
     }
+
+    @Test
+    public void givenZero_returnsNegativeNumber() {
+        Fibonacci fibonacci = new Fibonacci();
+        int negativeFibonacci = fibonacci.findNthNumber(0);
+        assertEquals(-1, negativeFibonacci);
+    }
+
 }

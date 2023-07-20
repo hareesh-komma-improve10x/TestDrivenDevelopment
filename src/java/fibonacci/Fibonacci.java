@@ -8,7 +8,8 @@ public class Fibonacci {
             return 0;
         } else if (n == 2) {
             return 1;
+        } else {
+            return findNthNumber(n - 1) + findNthNumber(n - 2);
         }
-        return n;
     }
 }

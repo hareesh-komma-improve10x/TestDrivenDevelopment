@@ -1,5 +1,6 @@
 package scoring;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -27,5 +28,17 @@ public class ScoringTest {
     public void givenA_returnsOneZeroZero() {
         int[] onlyAScores = scoring.calculateScores("A");
         assertArrayEquals(new int[]{1, 0, 0}, onlyAScores);
+    }
+
+    @Test
+    public void givenB_returnsZeroOneZero() {
+        int[] onlyBScores = scoring.calculateScores("B");
+        assertArrayEquals(new int[]{0, 1, 0}, onlyBScores);
+    }
+
+    @Test
+    public void givenC_returnsZeroZeroOne() {
+        int[] onlyCScores = scoring.calculateScores("C");
+        assertArrayEquals(new int[]{0, 0, 1}, onlyCScores);
     }
 }

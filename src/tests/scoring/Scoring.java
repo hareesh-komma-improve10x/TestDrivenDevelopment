@@ -2,6 +2,6 @@ package scoring;
 
 public class Scoring {
     public int[] calculateScores(String score) {
-        return new int[0];
+        return new int[3];
     }
 }

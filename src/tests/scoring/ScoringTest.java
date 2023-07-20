@@ -41,4 +41,10 @@ public class ScoringTest {
         int[] onlyCScores = scoring.calculateScores("C");
         assertArrayEquals(new int[]{0, 0, 1}, onlyCScores);
     }
+
+    @Test
+    public void givenAB_returnsOneOneZero() {
+        int[] abScores = scoring.calculateScores("AB");
+        assertArrayEquals(new int[]{1, 1, 0}, abScores);
+    }
 }

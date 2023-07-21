@@ -22,4 +22,10 @@ public class NameInverterTest {
         String invertedName = nameInverter.invertName("name");
         assertEquals("name", invertedName);
     }
+
+    @Test
+    public void givenSingleWordWithTrailingSpace_returnsSingleWord() {
+        String invertedName = nameInverter.invertName("name  ");
+        assertEquals("name", invertedName);
+    }
 }

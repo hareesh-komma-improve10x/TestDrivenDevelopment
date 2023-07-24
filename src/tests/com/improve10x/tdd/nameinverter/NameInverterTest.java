@@ -1,5 +1,6 @@
-package nameinverter;
+package com.improve10x.tdd.nameinverter;
 
+import nameinverter.NameInverter;
 import org.testng.annotations.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

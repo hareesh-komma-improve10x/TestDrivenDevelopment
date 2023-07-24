@@ -26,4 +26,10 @@ public class PlayerTest {
         Player player = new Player("Explorer");
         assertEquals("Explorer", player.getName());
     }
+
+    @Test
+    public void givenNameExplorerWithSpaces_whenGetNameCalled_thenReturnExplorerTrimmed() {
+        Player player = new Player("Explorer  ");
+        assertEquals("Explorer", player.getName());
+    }
 }

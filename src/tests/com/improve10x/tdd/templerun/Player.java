@@ -25,6 +25,10 @@ public class Player {
         return health;
     }
 
+    public void run() {
+        System.out.println("Running...!");
+    }
+
     public class InvalidHealthException extends RuntimeException{
     }
 }

@@ -1,11 +1,23 @@
 package com.improve10x.tdd.templerun;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class PlayerTest {
+
+    private ByteArrayOutputStream outputStream;
+
+    @BeforeEach
+    public void setup() {
+        outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
+    }
 
     @Test
     public void nothing() {}
@@ -61,8 +73,15 @@ public class PlayerTest {
     }
 
     @Test
-    public void givenHealth90_whenGetHealthCalled_thenReturn90() throws Player.InvalidHealthException {
+    public void givenHealth90_whenGetHealthCalled_thenReturn90() {
         Player player = new Player("Name", 90);
         assertEquals(90, player.getHealth());
+    }
+
+    @Test
+    public void whenRunCalled_displayRunningMessage() {
+        Player player = new Player("Name", 100);
+        player.run();
+        assertEquals("Running...!", outputStream.toString().trim());
     }
 }

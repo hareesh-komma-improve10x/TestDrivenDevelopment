@@ -113,6 +113,13 @@ public class PlayerTest {
         player.jump();
         assertEquals("Name jumped to avoid obstacles!", outputStream.toString().trim());
     }
+
+    @Test
+    public void givenHealth100_whenJumpCalled_displaysJumpingMessage() {
+        Player player = new Player("Name", 100);
+        player.jump();
+        assertEquals("Name jumped to avoid obstacles!", outputStream.toString().trim());
+    }
 }
 
 

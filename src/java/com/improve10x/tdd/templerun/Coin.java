@@ -7,9 +7,8 @@ public class Coin {
     public Coin(int value) {
         if (value < 0 || value > 100) {
             throw new InvalidCoinValueException();
-        } else {
-            this.value = value;
         }
+        this.value = value;
     }
 
     public int getValue() {

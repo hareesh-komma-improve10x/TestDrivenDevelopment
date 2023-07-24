@@ -14,4 +14,10 @@ public class PlayerTest {
         Player player = new Player(null);
         assertEquals("", player.getName());
     }
+
+    @Test
+    public void givenNameEmpty_whenGetNameCalled_thenReturnEmpty() {
+        Player player = new Player("");
+        assertEquals("", player.getName());
+    }
 }

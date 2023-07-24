@@ -84,4 +84,10 @@ public class PlayerTest {
         player.run();
         assertEquals("Running...!", outputStream.toString().trim());
     }
+
+    @Test
+    public void whenScoreCalled_return0() {
+        Player player = new Player("Name");
+        assertEquals(0, player.getScore());
+    }
 }

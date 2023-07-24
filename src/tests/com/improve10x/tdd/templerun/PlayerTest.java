@@ -13,6 +13,5 @@ public class PlayerTest {
     public void givenNameNull_whenGetNameCalled_thenReturnEmpty() {
         Player player = new Player(null);
         assertEquals("", player.getName());
-
     }
 }

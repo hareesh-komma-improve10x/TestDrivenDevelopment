@@ -106,4 +106,21 @@ public class PlayerTest {
         player.collectCoin(new Coin(20));
         assertEquals(30, player.getScore());
     }
+
+    @Test
+    public void whenJumpCalled_displaysJumpingMessage() {
+        Player player = new Player("Name");
+        player.jump();
+        assertEquals("Name jumped to avoid obstacles!", outputStream.toString().trim());
+    }
 }
+
+
+
+
+
+
+
+
+
+

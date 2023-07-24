@@ -90,4 +90,11 @@ public class PlayerTest {
         Player player = new Player("Name");
         assertEquals(0, player.getScore());
     }
+
+   /* @Test
+    public void givenCoin10_whenGetScoreCalled_returns10() {
+        Player player = new Player("Name");
+        player.collectCoin(new Coin(10));
+        assertEquals(10, player.getScore());
+    }*/
 }

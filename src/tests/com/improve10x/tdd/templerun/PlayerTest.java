@@ -20,4 +20,10 @@ public class PlayerTest {
         Player player = new Player("");
         assertEquals("", player.getName());
     }
+
+    @Test
+    public void givenNameExplorer_whenGetNameCalled_thenReturnExplorer() {
+        Player player = new Player("Explorer");
+        assertEquals("Explorer", player.getName());
+    }
 }

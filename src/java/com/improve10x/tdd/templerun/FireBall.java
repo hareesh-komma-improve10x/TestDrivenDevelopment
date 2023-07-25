@@ -6,7 +6,7 @@ public class FireBall {
 
     public FireBall(int speed) {
         this.speed = speed;
-        if (speed < 0) {
+        if (speed < 0 || speed > 100) {
             throw new InvalidFireBallSpeedException();
         }
     }

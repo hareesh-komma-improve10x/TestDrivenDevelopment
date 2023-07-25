@@ -1,15 +1,16 @@
 package com.improve10x.tdd.templerun;
 
-public class FireBall extends Obstacle{
+public class FireBall {
 
     public int speed;
 
     public FireBall(int speed) {
-        super("Moving Fireball", 30);
         this.speed = speed;
+        if (speed < 0) {
+            throw new InvalidFireBallSpeedException();
+        }
     }
 
-    public void roll() {
-        System.out.println("The " + name + " is rolling with speed of " + speed + " mph.");
+    public class InvalidFireBallSpeedException extends RuntimeException{
     }
 }

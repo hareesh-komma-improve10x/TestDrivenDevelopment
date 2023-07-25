@@ -121,13 +121,3 @@ public class PlayerTest {
         assertEquals("Name jumped to avoid obstacles!", outputStream.toString().trim());
     }
 }
-
-
-
-
-
-
-
-
-
-
